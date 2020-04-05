@@ -1,4 +1,5 @@
 h1
   | Weathers#index
-p
-  | Find me in app/views/weathers/index.html.erb
+
+- @cities.each do |city|
+  = tag.div(class: 'weather', 'data-city-name': city)
